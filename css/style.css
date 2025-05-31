@@ -1,0 +1,155 @@
+/* css/style.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.container {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #1d3557;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #457b9d;
+}
+
+.mode-selection a, button, .nav-link {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 15px 0; /* 汎用ボタンスタイル */
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+    box-sizing: border-box;
+}
+
+.mode-selection a:hover, button:hover, .nav-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.mode-selection a:active, button:active, .nav-link:active {
+    transform: translateY(0);
+}
+
+.condition-group {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.condition-group h3 {
+    margin-top: 0;
+    color: #e63946;
+    border-bottom: 2px solid #f1faee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.condition-item {
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border-left: 4px solid #457b9d;
+    background-color: #edf6f9;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.condition-item strong {
+    color: #1d3557;
+}
+
+#advanced-controls {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#advanced-controls label {
+    font-weight: bold;
+    color: #1d3557;
+}
+
+#advanced-controls select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+#advanced-results .person-block {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #a8dadc;
+    border-radius: 8px;
+    background-color: #f1faee;
+}
+
+#advanced-results .person-block h4 {
+    margin-top: 0;
+    color: #e63946;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.footer-nav {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* ▼▼▼ 上級編の生成ボタンの個別マージン指定を削除 ▼▼▼ */
+/* #generateAdvancedBtn {
+    margin-bottom: 30px; 
+}
+*/
+/* ▲▲▲ 上記をコメントアウトまたは削除 ▲▲▲ */
